@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+body{
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+    
+
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+    border-bottom: 1px solid #EAEAEA;
+}
+
+.navbar{
+    padding: 0rem 0.75rem;
+    display: flex;
+    max-width: 900px;
+    margin: 0 auto;
+    height: 68px;
+    align-items: center;
+    
+
+}
+
+a{
+    color: #666666;
+}
+
+.nav{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    justify-content: center;
+    
+    li{
+        list-style-type: none;
+        padding: 0 0.25rem;
+        width: 100%;
+        
+        a{
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            padding: 0.9rem 0;
+                       
+        }
+    }
+
+}
+
+.active-home{
+
+    a{
+        color: #2c7be5;
+        background: rgba(207, 207, 207, 0.15);
+        border-radius: 0.3rem;   
+        
+    }
+  
+}
+
+.home{
+    
+    a:hover{
+        color: #2c7be5;
+        background: rgba(207, 207, 207, 0.15);
+        border-radius: 0.3rem; 
+        transition: 0.5s;
+    }
+    
+}
+
+/* navbar ends here */
+
+
+.content{
+    max-width: 900px;
+    margin: 0 auto;
+    background-image: url('dot.png');
+    background-repeat: repeat-y, space;
+
+}
+
+
+.hero{
+    text-align: center;
+    margin: 68px auto 0 auto;
+    padding-top: 7rem;
+}
+
+.hero{
+    h3{
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+        font-size: 1.875rem;
+        color: #BEBEBE;
+    }
+}
+
+h1{
+        font-weight: 800;
+        font-size: 3.125rem;
+        color: #BEBEBE;
+        margin-top: 1.25rem;
+    }
+
+.black-text{
+    color: #5A5A5A;
+    ;
+}
+
+h2{
+    font-weight: 800;
+    font-size: 2.5rem;
+    color: #BEBEBE;
+    margin: 1.125rem 0 0 0;
+
+}
+
+.me{
+    font-weight: 500;
+    font-size: 1rem;
+    color: #BEBEBE;
+    width: 90%;
+    margin: 3rem auto 0 auto;
+}
+
+.blue-text{
+    color: #1362E1;
+}
+
+.social-links{
+    display: flex ;
+    justify-content: center;
+    padding: 2.5rem 0 0 0;
+    margin: 0;
+    
+    li{
+        list-style-type: none;
+        margin: 0 1.125rem;
+    }
+
+}
+
+h3{
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 1.875rem;
+    color: #BEBEBE;
+}
+
+.content-container{
+    margin-top: 8rem;
+}
+
+
+.grid{
+    margin: 2rem auto 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.875rem;
+    grid-row-gap: 5rem;
+    
+
+    article{
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.text{
+    margin: 0;
+    padding: 0;
+
+    h4{
+        margin: 1rem 0 0 0;
+
+        button{
+            color: white;
+        }
+    }
+}
+
+h4{
+    margin: 8rem 0 0 0;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #C0C0C0;
+}
+
+/* Body ends here */
+
+.footer{
+    text-align: center;
+    margin: 8rem 0 0 0;
+
+    h3{
+        font-weight: bold;
+        font-size: 2.5rem;
+        color: #2C7BE5;
+    }
+
+    img{
+        margin-top: 2rem;
+    }
+    
+}
+/* Footer ends here */
+
+
+@media (max-width: 768px){
+
+    .content-container{
+        margin: 4rem auto 0 auto;
+        width: 90%;
+    }
+
+    .grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .content{
+        max-width: 900px;
+        margin: 0 auto;
+        background-image: url('dot.png');
+    
+    }
+    
+    
+    .hero{
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 68px;
+        padding-top: 7rem;
+    }
+    
+    .hero{
+        h3{
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+            font-size: 1.875rem;
+            color: #BEBEBE;
+        }
+    }
+    
+
+     h1{
+            font-weight: 800;
+            font-size: 1.875rem;
+            color: #BEBEBE;
+            margin-top: 1.25rem;
+        }
+    
+    .black-text{
+        color: #5A5A5A;
+        ;
+    }
+    
+    h2{
+        font-weight: 800;
+        font-size: 1.5rem;
+        color: #BEBEBE;
+        width: 90%;
+        margin: 1.125rem auto 0 auto;
+    
+    }
+    
+    .me{
+        font-weight: 500;
+        font-size: 1rem;
+        color: #BEBEBE;
+        width: 90%;
+        margin: 3rem auto 0 auto;
+    }
+    
+    .blue-text{
+        color: #1362E1;
+    }
+    
+    .social-links{
+        display: flex ;
+        justify-content: center;
+        padding: 2.5rem 0 0 0;
+        margin: 0;
+        
+        li{
+            list-style-type: none;
+            margin: 0 1.125rem;
+        }
+    
+    }
+
+
+}
+
+/* Hero ends here, Still 480-768px displays left */
+
+/* Work tabs Start here */
+
+
+
+@media (max-width: 500px){
+
+    .content-container{
+        margin: 4rem auto 0 auto;
+        width: 90%;
+    }
+
+    .grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    .content{
+        max-width: 900px;
+        margin: 0 auto;
+        background-image: url('dot.png');
+    
+    }
+    
+    
+    .hero{
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 68px;
+        padding-top: 7rem;
+    }
+    
+    .hero{
+        h3{
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+            font-size: 1.875rem;
+            color: #BEBEBE;
+        }
+    }
+    
+
+     h1{
+            font-weight: 800;
+            font-size: 1.875rem;
+            color: #BEBEBE;
+            margin-top: 1.25rem;
+        }
+    
+    .black-text{
+        color: #5A5A5A;
+        ;
+    }
+    
+    h2{
+        font-weight: 800;
+        font-size: 1.5rem;
+        color: #BEBEBE;
+        width: 90%;
+        margin: 1.125rem auto 0 auto;
+    
+    }
+    
+    .me{
+        font-weight: 500;
+        font-size: 1rem;
+        color: #BEBEBE;
+        width: 90%;
+        margin: 3rem auto 0 auto;
+    }
+    
+    .blue-text{
+        color: #1362E1;
+    }
+    
+    .social-links{
+        display: flex ;
+        justify-content: center;
+        padding: 2.5rem 0 0 0;
+        margin: 0;
+        
+        li{
+            list-style-type: none;
+            margin: 0 1.125rem;
+        }
+    
+    }
+
+
+
+}
+
+
+
+#linked{
+    fill: #A8A7A7;
+
+}
+
+#linked:hover{
+    fill: #1362E1;
+    transition: 0.1s;
+}
